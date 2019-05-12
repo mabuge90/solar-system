@@ -1,0 +1,42 @@
+#box {
+    background: #5dcaea;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: background 2s, top 1s, left 2s;
+}
+
+#box:hover {
+    background: lightcoral;
+    top: 100px;
+    left: 100px;
+}
+
+0% {
+top: 0;
+left: 0;
+fill: #5dcaea;
+}
+50% {fill: blueviolet;}
+100% {
+top: 500px;
+left: 500px;
+fill: darkred;
+}
+
+
+#rotation {
+position:relative;
+transform: rotate(0deg);
+transition: transform 0.7s linear;
+}
+
+@keyframes color {
+/*from {background: #5dcaea;}*/
+/*to {background: darkred;}*/
+0% {fill: #5dcaea;}
+50% {fill: blueviolet;}
+100% {fill: darkred;}
+}
